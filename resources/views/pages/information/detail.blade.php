@@ -42,7 +42,7 @@
                     {!! $information->content !!}
                 </div>
             </div>
-            <div class="lg:sticky lg:top-3 border rounded w-[350px] h-[600px]">
+            <div class="lg:sticky lg:top-3 border rounded w-[350px] h-[600px] mt-5 lb:mb-0">
                 <div class="mb-2">
                     <span class="font-semibold text-lg" style="color: #DF3727">Baca Juga</span>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="space-y-2">
                         @foreach ($other_informations as $key => $other_information)
                             <a href="{{route('information-detail', $other_information->slug)}}">
-                                <div class="flex items-center gap-4 bg-gray-100 shadow-md p-2 rounded-lg border-l-4 border-red-500">
+                                <div class="flex items-center gap-4 bg-gray-100 shadow-md p-2 rounded-lg border-l-4 border-red-500 mb-3 lg:mb-0">
                                     <div class="text-sm flex items-center justify-center w-10 h-10 bg-red-100 text-red-600 font-bold rounded-full">
                                         {{ $key + 1 }}
                                     </div>

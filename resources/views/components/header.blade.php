@@ -28,7 +28,7 @@
             <span class="h-3 w-3 rounded-full" style="background-color: #DF3727"></span>
         </div>
         <div class="flex items-center">
-            <a href="{{route('information')}}">
+            <a href="{{$setting->gdrive_link}}" target="_blank">
                 <span class="text-lg font-medium" style="color: #DF3727">Galeri</span>
             </a>
         </div>

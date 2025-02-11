@@ -14,6 +14,9 @@
                 <a href="{{route('information')}}" class="hover:underline me-4 md:me-6">Informasi</a>
             </li>
             <li>
+                <a href="{{$setting->gdrive_link}}" target="_blank" class="hover:underline me-4 md:me-6">Galeri</a>
+            </li>
+            <li>
                 <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
             </li>
             <li>

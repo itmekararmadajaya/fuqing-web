@@ -11,6 +11,7 @@ class Setting extends Model
         'address',
         'google_maps_link',
         'contact_person',
-        'instagram'
+        'instagram',
+        'gdrive_link'
     ];
 }

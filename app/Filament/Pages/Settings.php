@@ -29,6 +29,7 @@ class Settings extends Page implements HasForms
     public $google_maps_link;
     public $contact_person;
     public $instagram;
+    public $gdrive_link;
 
     public static function canAccess(): bool
     {
@@ -73,14 +74,17 @@ class Settings extends Page implements HasForms
     public function form(Form $form): Form {
         return $form->schema([
             Section::make('Header')->schema([
-                FileUpload::make('header_image')->disk('public')->directory('header_images')->image()
+                FileUpload::make('header_image')->disk('public')->directory('header_images')->image()->required()
             ])->columns(2),
             Section::make('Information')->schema([
-                Textarea::make('address'),
-                TextInput::make('google_maps_link'),
-                TextInput::make('contact_person'),
-                TextInput::make('instagram'),
-            ])->columns(2)
+                Textarea::make('address')->required(),
+                TextInput::make('google_maps_link')->required(),
+                TextInput::make('contact_person')->required(),
+                TextInput::make('instagram')->required(),
+            ])->columns(2),
+            Section::make("Gallery")->schema([
+                TextInput::make('gdrive_link')->label("Google Drive Link")->required()
+            ])
             ]);
     }
 

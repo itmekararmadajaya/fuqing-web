@@ -6,7 +6,7 @@
         </div>
         <div class="p-5 shadow-lg rounded-lg bg-gray-100">
             <div class="text-left mb-4">
-                <span class="text-lg font-bold text-red-600">FUQING MAGELANG</span>
+                <span class="text-lg font-bold" style="color: #D10000;">FUQING MAGELANG</span>
             </div>
             <div class="text-left text-gray-600 text-sm mb-4">
                 <span>{{$setting->address}}</span>

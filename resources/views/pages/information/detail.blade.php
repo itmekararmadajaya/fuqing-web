@@ -44,7 +44,7 @@
             </div>
             <div class="lg:sticky lg:top-3 border rounded w-[350px] h-[600px] mt-5 lb:mb-0">
                 <div class="mb-2">
-                    <span class="font-semibold text-lg" style="color: #DF3727">Baca Juga</span>
+                    <span class="font-semibold text-lg" style="color: #D10000">Baca Juga</span>
                 </div>
                 <div class="">
                     <div class="space-y-2">

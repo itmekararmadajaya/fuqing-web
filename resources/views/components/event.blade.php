@@ -3,12 +3,12 @@
     <div class="">
         <div class="lg:grid lg:grid-cols-3 lg:gap-3">
             @foreach ($events as $event)
-                <div class="group overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer transition-transform duration-300 hover:scale-105 mb-3 lg:mb-0" style="background-color: #DEBE8B;">
+                <div class="group overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer transition-transform duration-300 hover:scale-105 mb-3 lg:mb-0" style="background-color: #D10000;">
                     <div class="overflow-hidden">
                         <img src="{{ asset('storage/' . $event->image) }}" alt="Event Image" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 text-center">
-                        <h3 class="text-base lg:text-lg font-semibold text-black">{{$event->title}}</h3>
+                        <h3 class="text-base lg:text-lg font-semibold" style="color: #FAFE00">{{$event->title}}</h3>
                     </div>
                 </div>
             @endforeach
